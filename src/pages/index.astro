@@ -21,19 +21,15 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'Meine Kompetenzen',
-        href: 'https://github.com/arthelokyo/astrowind',
-        target: '_blank',
-      },
-    ]}
-    image={{ src: '~/assets/images/Zuend_IMG_2482_bearb.jpg', alt: 'Rainer Zünd' }}
-  >
-    <Fragment slot="title"> Rainer Zünd </Fragment>
-  </Hero>
+  <Hero>
+  <Fragment slot="title">
+    <ul class="list-none p-0 m-0 space-y-10">
+      <li>Management- und Prozesskompetenz</li>
+      <li>Führungssupport und Coaching </li>
+      <li>Expertentätigkeit</li>
+    </ul>
+  </Fragment>
+</Hero>
 
   <!-- Note Widget ******************* -->
 
@@ -45,24 +41,29 @@ const metadata = {
     id="features"
     tagline="Übersicht"
     title="Wo liegen meine Kompetenzen"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl."
     items={[
       {
         title: 'Management- & Prozesskompetenz',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility. Now powered by Tailwind CSS v4.',
+          'Meine authentische Leadership-Qualität macht den Unterschied. Gerne übernehme ich zeitlich befristet die Verantwortung einer operativen Einheit sowie der Umsetzung von ausgewählten Projekten und Prozessen.',
         icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Beratungen & Führungssupport und Coaching',
+        description:
+        'Im Bereich Vorspann- und Verstärkungstechnik bringe ich aufgrund meiner langjährigen Berufserfahrung ausgewiesene Erfahrung mit, welche ich gerne gewinnbringend zur Verfügung stelle. Dies beinhaltet insbesondere Beurteilungen und Inspektionen von vorgespannten Infrastrukturbauten sowie Verstärkungskonzepte von Betonkonstruktionen während der Umnutzungsphase.',
+        icon: 'tabler:list-check',
       },
       {
         title: 'Expertentätigkeit',
         description:
-          'Widgets made with Tailwind CSS v4 ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          'Gerne stelle ich meine 30 Jahre Führungserfahrung zur Verfügung. Respekt und Wertschätzung sind Schüsselfaktoren für eine erfolgreiche Personal- und Organisationsentwicklung. Eine wertbasierte und sinnstiftende Unternehmenskultur leistet zudem eine zentrale Voraussetzung für eine erfolgreiche Unternehmenszukunft.',
         icon: 'tabler:components',
       },
       {
-        title: 'Beratungen & Führungssupport',
+        title: 'Kontakt',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+        'Nehmen Sie hier Kontakt mit mir auf.',
         icon: 'tabler:list-check',
       },
     ]}
