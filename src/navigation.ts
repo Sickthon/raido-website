@@ -1,4 +1,4 @@
-import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
+import { getPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
@@ -15,21 +15,21 @@ export const headerData = {
         },
         {
           text: 'Management- & Prozesskompetenz',
-          href: getPermalink('/services'),
+          href: getPermalink('/management-und-prozesskompetenz'),
         },
         {
           text: 'Führungssupport und Coaching',
-          href: getPermalink('/pricing'),
+          href: getPermalink('/fuerungssupport-und-coaching'),
         },
         {
           text: 'Expertentätigkeit',
-          href: getPermalink('/about'),
+          href: getPermalink('/expertentätigkeit'),
         },
       ],
     },
     {
       text: 'Über mich',
-      href: getPermalink('/ueber-mich'),
+      href: getPermalink('/#ueber-mich'),
     },
   ],
   actions: [{ text: 'Kontakt', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
