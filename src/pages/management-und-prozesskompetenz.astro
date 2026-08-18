@@ -1,47 +1,112 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
 
 const metadata = {
-  title: 'Page Title',
+  title: 'Management und Prozesskompetenz',
 };
 ---
 
 <Layout metadata={metadata}>
-  <section>
-    <h1>Management und leitende Funktionen</h1>
+  <!-- Hero Widget ******************* -->
 
-    <h2>Interimsmanagement</h2>
-    <p>
-      Zeitlich befristet übernehme ich gerne persönlich die erforderlichen Führungsaufgaben als CEO, COO oder
-      Abteilungsleiter mit entsprechender Kosten- und Ergebnisverantwortung sowie die disziplinarische
-      Mitarbeiterführung. Dabei lege ich grossen Wert auf die Prozesssicherheit in allen dazugehörigen Disziplinen.
-      Dabei arbeite ich parallel an der gezielten Weiterentwicklung der Organisation und deren Kompetenzen.
-    </p>
+  <Hero
+    tagline="Management und Prozesskompetenz"
+    title="Interimsmanagement"
+    subtitle="Zeitlich befristet übernehme ich gerne persönlich die erforderlichen Führungsaufgaben als CEO, COO oder Abteilungsleiter mit entsprechender Kosten- und Ergebnisverantwortung."
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Management Image',
+    }}
+  />
 
-    <p>
-      <strong
-        >Bei Raido wissen Sie, mit wem Sie es zu tun haben – Authentische Leadershipqualitäten von Rainer Zünd</strong
-      >
-    </p>
-    <p>
-      30 Jahre erfolgreiche Linien- und PnL-Verantwortung, zukunftsorientierte Organisations- und
-      Mitarbeiterentwicklungen und verantwortungsbewusster Umgang mit den Unternehmensressourcen sind nur einige
-      Aspekte, welche ich in ausgeprägtem Masse mitbringe.
-    </p>
+  <!-- Content Widget **************** -->
 
-    <h2>Projekt- und Prozessmanagement</h2>
-    <p>
-      Ich übernehme gerne eine Gesamt- oder Teilverantwortung von Kunden- oder internen Unternehmensprojekten im Auftrag
-      des Verwaltungsrates oder der Geschäftsleitung. Dies kann u.a. folgendes beinhalten:
-    </p>
-    <ul>
-      <li>Zusammenlegung von Organisationen bzw. Produktionen</li>
-      <li>Analyse der operativen Prozesse bzw. deren Effizienz und Rentabilität</li>
-      <li>Changemanagement</li>
-      <li>Sales-, Verkaufs- und Pricing-Analysen</li>
-      <li>Claim Management/ Schadenfälle Bau</li>
-      <li>Änderungs- und Nachtragsmanagement Bau &amp; Industrie</li>
-      <li>Projektbegleitung im Bereich Vorspann- und Verstärkungstechnologien in der Bauwirtschaft</li>
-    </ul>
-  </section>
+  <Content
+    title="Authentische Leadershipqualitäten"
+    items={[
+      {
+        title: '30 Jahre Erfahrung',
+        description:
+          'Erfolgreiche Linien- und PnL-Verantwortung in verschiedenen Organisationen und Industrien.',
+      },
+      {
+        title: 'Prozesssicherheit',
+        description:
+          'Fokus auf durchdachte Prozessoptimierung in allen Bereichen der Organisation.',
+      },
+      {
+        title: 'Organisationsentwicklung',
+        description:
+          'Gezielte Weiterentwicklung von Organisationen und deren Kompetenzen parallel zur operativen Verantwortung.',
+      },
+      {
+        title: 'Verantwortungsvoller Umgang',
+        description:
+          'Verantwortungsbewusster Umgang mit Unternehmensressourcen und Mitarbeitern.',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Leadership Image',
+    }}
+  >
+    <Fragment slot="content">
+      <p>
+        Bei Raido wissen Sie, mit wem Sie es zu tun haben – Authentische Leadershipqualitäten von Rainer Zünd.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Projekt- und Prozessmanagement"
+    subtitle="Gesamt- oder Teilverantwortung von Kunden- oder internen Unternehmensprojekten"
+    tagline="Leistungen"
+    columns={2}
+    items={[
+      {
+        title: 'Zusammenlegung von Organisationen',
+        description: 'Merge und Integration von verschiedenen Organisationseinheiten oder Produktionsstätten.',
+        icon: 'tabler:git-merge',
+      },
+      {
+        title: 'Prozessanalyse',
+        description: 'Analyse der operativen Prozesse bezüglich deren Effizienz und Rentabilität.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Changemanagement',
+        description: 'Gestaltung und Durchführung von organisatorischen Veränderungsprozessen.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Sales & Pricing Analysen',
+        description: 'Umfassende Analysen von Sales-, Verkaufs- und Pricing-Strategien.',
+        icon: 'tabler:currency-dollar',
+      },
+      {
+        title: 'Claim Management',
+        description: 'Professionelles Management von Schadenfällen im Bereich Bau und Infrastruktur.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Änderungsmanagement',
+        description: 'Änderungs- und Nachtragsmanagement in Bau- und Industrieprojekten.',
+        icon: 'tabler:adjustments',
+      },
+      {
+        title: 'Vorspanntechnologie',
+        description: 'Projektbegleitung im Bereich Vorspann- und Verstärkungstechnologien in der Bauwirtschaft.',
+        icon: 'tabler:building-bridge',
+      },
+    ]}
+  />
 </Layout>

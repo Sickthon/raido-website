@@ -1,11 +1,115 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Page Title',
+  title: 'Führungssupport und Coaching',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Your page content here -->
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Führungssupport und Coaching"
+    title="30 Jahre Führungserfahrung"
+    subtitle="Authentizität, Sozialkompetenz und Empathie als Basis für nachhaltige Entwicklung von Menschen und Organisationen."
+  />
+
+  <!-- Content Widget: Philosophy ************** -->
+
+  <Content
+    title="Meine Philosophie"
+    items={[
+      {
+        title: 'Mit den Mitarbeitern arbeiten, die da sind',
+        description:
+          'Nicht mit denjenigen, welche nicht da sind. Jeder Mensch hat Potential, das es zu entwickeln gilt.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Respekt vor dem Menschen',
+        description:
+          'Der Mensch steht im Mittelpunkt. Respekt und Wertschätzung sind Schlüsselfaktoren für erfolgreiche Entwicklung.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Nachhaltige Mehrwerte',
+        description:
+          'Ziel ist nicht kurzfristige Veränderung, sondern langfristige, messbare Erfolge für Unternehmen und Mitarbeiter.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Authentische Führung',
+        description:
+          'Gelebte Authentizität schafft Vertrauen und Glaubwürdigkeit – die Grundlagen für echte Organisationsentwicklung.',
+        icon: 'tabler:certificate',
+      },
+    ]}
+  >
+    <Fragment slot="content">
+      <p>
+        Mit 30 Jahren erfolgreicher Führungserfahrung kenne ich die Herausforderungen, denen sich Organisationen und
+        Menschen gegenübersehen. Mein Ansatz ist geprägt von Authentizität, Sozialkompetenz und Empathievermögen – die
+        wesentlichen Faktoren, um Menschen und Organisationen nachhaltig zu entwickeln und messbaren Erfolg zu
+        generieren.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Features2 Widget: Services ************** -->
+
+  <Features2
+    title="Wie ich Sie unterstütze"
+    columns={2}
+    items={[
+      {
+        title: 'Transformationen & Change Management',
+        description: 'Prozessbegleitung für Transformationen und Change Management in Organisationen.',
+        icon: 'tabler:git-branch',
+      },
+      {
+        title: 'Organisationsentwicklung',
+        description: 'Unterstützung und Beratung bei strukturellen und kulturellen Organisationsentwicklungen.',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Leadership Coaching',
+        description: 'Individuelles Coaching von Führungspersonen und High Potentials zur Kompetenzerweiterung.',
+        icon: 'tabler:crown',
+      },
+      {
+        title: 'Führungskurse & Seminare',
+        description: 'Führungskurse und -seminare für aktuelle oder zukünftige Leader auf allen Ebenen.',
+        icon: 'tabler:school',
+      },
+      {
+        title: 'Rekrutierungsunterstützung',
+        description:
+          'Gewinnbringende Unterstützung bei Rekrutierungen durch unternehmerische Aussen- und Weitsicht.',
+        icon: 'tabler:briefcase',
+      },
+    ]}
+  />
+
+  <!-- Call to Action Widget ********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Kontaktieren Sie mich',
+        href: '/contact',
+      },
+    ]}
+    title="Lassen Sie uns zusammenarbeiten"
+    subtitle="Gemeinsam entwickeln wir Ihre Menschen und Ihre Organisation weiter. Kontaktieren Sie mich für ein unverbindliches Gespräch."
+  />
 </Layout>

@@ -1,11 +1,153 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+import Content from '~/components/widgets/Content.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Page Title',
+  title: 'Expertentätigkeit',
 };
 ---
 
 <Layout metadata={metadata}>
-  <!-- Your page content here -->
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Expertentätigkeit"
+    title="Spezialisierte Expertise in Bautechnik"
+    subtitle="Mit über 20 Jahren ausgewiesener Erfahrung in Vorspann- und Verstärkungstechnologie stelle ich mein umfassendes Know-How zur Verfügung."
+    image={{
+      src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Construction Engineering',
+    }}
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Meine Expertise"
+    columns={2}
+    items={[
+      {
+        title: 'Vorspanntechnik',
+        description:
+          'Mit 20 Jahren Erfahrung gehöre ich zu den wenigen Experten in dieser spezialisierten Branche und biete umfassende Beratung.',
+        icon: 'tabler:building-bridge',
+      },
+      {
+        title: 'Verstärkungstechnik',
+        description:
+          'Spezialisierte Lösungen für Biegeverstärkungen und Durchstanzverstärkungen mit Fokus auf Statik und Verträglichkeit.',
+        icon: 'tabler:hammer',
+      },
+    ]}
+  />
+
+  <!-- Content Widget: Vorspanntechnik ************** -->
+
+  <Content
+    isReversed
+    title="Vorspanntechnik"
+    items={[
+      {
+        title: 'Beurteilung von vorgespannten Brücken',
+        description: 'Umfassende Analyse von vorgespannten Brücken und deren spezifisch eingebauter Vorspannung.',
+        icon: 'tabler:building-bridge',
+      },
+      {
+        title: 'Schrägkabel-Analyse',
+        description: 'Fachkompetente Beurteilung der Schrägkabel bei Schrägkabelbrücken.',
+        icon: 'tabler:link',
+      },
+      {
+        title: 'Stützverbauungen',
+        description: 'Beurteilung von rückverankerten Stützverbauungen und deren Tragfähigkeit.',
+        icon: 'tabler:shield-check',
+      },
+      {
+        title: 'Schadenfallanalyse',
+        description: 'Professionelle Analyse und Begutachtung von Schadenfällen in der Vorspanntechnik.',
+        icon: 'tabler:alert-circle',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Prestressed Concrete Technology',
+    }}
+  >
+    <Fragment slot="content">
+      <p>
+        In den letzten 20 Jahren sind über 1.000 Dienstjahre an Know-How in der Ausführungsindustrie für
+        Vorspanntechnologie durch Fluktuationen verloren gegangen. Mit meiner umfassenden Erfahrung helfe ich Ihnen,
+        diese kritischen Herausforderungen zu meistern.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget: Verstärkungstechnik ************** -->
+
+  <Content
+    title="Verstärkungstechnik"
+    items={[
+      {
+        title: 'Biegeverstärkungen',
+        description:
+          'Wirksame Lösungen für Biegeverstärkungen mit Fokus auf sowohl statische Aspekte als auch Verträglichkeit.',
+        icon: 'tabler:trending-up',
+      },
+      {
+        title: 'Durchstanzverstärkungen',
+        description:
+          'Spezialisierte Lösungen zur Verstärkung gegen Durchstanzeffekte in Betonkonstruktionen.',
+        icon: 'tabler:lock',
+      },
+      {
+        title: 'Verträglichkeitsanalyse',
+        description:
+          'Gewährleistung, dass Verstärkungslösungen nicht nur statisch, sondern auch verträglich umgesetzt werden.',
+        icon: 'tabler:circle-check',
+      },
+      {
+        title: 'Bestandskonstruktionen',
+        description:
+          'Optimale Lösungen für die Verstärkung von bestehenden Betonkonstruktionen und Gebäuden.',
+        icon: 'tabler:building',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Reinforcement Technology',
+    }}
+  >
+    <Fragment slot="content">
+      <p>
+        Bei Verstärkungen von bestehenden Betonkonstruktionen werden oft Lösungen geplant und umgesetzt, die zwar die
+        statischen Aspekte erfüllen, aber die Verträglichkeit ausser Acht lassen. Mit meiner Expertise stelle ich
+        sicher, dass beide Kriterien optimal erfüllt sind.
+      </p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Call to Action Widget ********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Kontaktieren Sie mich',
+        href: '/contact',
+      },
+    ]}
+    title="Lassen Sie uns zusammenarbeiten"
+    subtitle="Haben Sie ein Projekt, das meine Expertise benötigt? Kontaktieren Sie mich für eine Beratung."
+  />
 </Layout>
