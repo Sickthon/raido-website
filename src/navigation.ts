@@ -38,8 +38,8 @@ export const headerData = {
 export const footerData = {
   secondaryLinks: [
     { text: 'Impressum', href: getPermalink('/impressum') },
-    { text: 'Copyright', href: getPermalink('/terms') },
-    { text: 'Datenschutz', href: getPermalink('/privacy') },
+    { text: 'Disclaimer & Copyright', href: getPermalink('/disclaimer-copyright') },
+    { text: 'Datenschutz', href: getPermalink('/datenschutz') },
   ],
   socialLinks: [
     { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/rainer-z%C3%BCnd-39a745391/' },
