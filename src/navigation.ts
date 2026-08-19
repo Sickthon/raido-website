@@ -32,12 +32,12 @@ export const headerData = {
       href: getPermalink('/#ueber-mich'),
     },
   ],
-  actions: [{ text: 'Kontakt', href: 'https://github.com/arthelokyo/astrowind', target: '_blank' }],
+  actions: [{ text: 'Kontakt', href: getPermalink('/impressum-kontakt') }],
 };
 
 export const footerData = {
   links: [
-    { text: 'Impressum', href: getPermalink('/impressum') },
+    { text: 'Impressum', href: getPermalink('/impressum-kontakt') },
     { text: 'Disclaimer & Copyright', href: getPermalink('/disclaimer-copyright') },
     { text: 'Datenschutz', href: getPermalink('/datenschutz') },
   ],
