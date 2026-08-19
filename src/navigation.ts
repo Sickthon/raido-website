@@ -47,12 +47,8 @@ export const footerData = {
       icon: 'tabler:brand-linkedin',
       href: 'https://www.linkedin.com/in/rainer-z%C3%BCnd-39a745391/',
     },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/arthelokyo/astrowind' },
   ],
   footNote: `
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://github.com/arthelokyo"> Arthelokyo</a> · All rights reserved.
+    &copy; <script>document.write(new Date().getFullYear())</script> Raido GMBH
   `,
 };
