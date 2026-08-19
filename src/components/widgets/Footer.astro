@@ -23,11 +23,13 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
   <div
     class="relative max-w-7xl mx-auto px-4 sm:px-6 dark:text-slate-300 intersect-once intersect-quarter intersect-no-queue motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade"
   >
-    <div class="grid grid-cols-3 items-center py-4">
-      <div class="justify-self-end text-sm text-muted dark:text-gray-400">
+    <div class="grid grid-cols-1 gap-4 py-4 sm:grid-cols-3 sm:items-center sm:gap-4 lg:gap-4">
+      <div
+        class="justify-self-center text-center text-sm text-muted dark:text-gray-400 sm:justify-self-end sm:text-right"
+      >
         <Fragment set:html={footNote} />
       </div>
-      <div class="text-sm dark:text-muted flex justify-center gap-1">
+      <div class="flex flex-wrap justify-center gap-1 text-center text-sm dark:text-muted">
         {
           links.map(({ text, href }, index) => (
             <>
@@ -43,7 +45,7 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
       </div>
       {
         socialLinks?.length ? (
-          <ul class="flex justify-start justify-self-start">
+          <ul class="flex justify-center sm:justify-start sm:justify-self-start">
             {socialLinks.map(({ ariaLabel, href, text, icon }) => (
               <li>
                 <a
