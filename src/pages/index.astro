@@ -23,7 +23,11 @@ const metadata = {
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
 
-  <Hero actions={[{ variant: 'primary', text: 'Mehr erfahren', href: getPermalink('/#features') }]}>
+  <Hero
+    actions={[
+      { variant: 'primary', text: 'Mehr erfahren', href: getPermalink('/#kompetenzen'), icon: 'tabler:arrow-down' },
+    ]}
+  >
     <Fragment slot="title">
       <ul class="list-none p-0 mt-0 mb-10 space-y-10">
         <li>Management- und Prozesskompetenz</li>
@@ -36,7 +40,7 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
+    id="kompetenzen"
     tagline="Übersicht"
     title="Meine Kompetenzen"
     items={[

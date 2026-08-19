@@ -16,6 +16,7 @@ export interface Props {
 }
 
 const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.props;
+const currentYear = new Date().getFullYear();
 ---
 
 <footer class:list={[{ dark: theme === 'dark' }, 'relative border-t border-gray-200 dark:border-slate-800 not-prose']}>
@@ -27,6 +28,7 @@ const { socialLinks = [], links = [], footNote = '', theme = 'light' } = Astro.p
       <div
         class="justify-self-center text-center text-sm text-muted dark:text-gray-400 sm:justify-self-end sm:text-right"
       >
+        &copy; {currentYear}{' '}
         <Fragment set:html={footNote} />
       </div>
       <div class="flex flex-wrap justify-center gap-1 text-center text-sm dark:text-muted">

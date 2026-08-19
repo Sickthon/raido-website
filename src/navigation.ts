@@ -11,7 +11,7 @@ export const headerData = {
       links: [
         {
           text: 'Übersicht',
-          href: getPermalink('/#features'),
+          href: getPermalink('/#kompetenzen'),
         },
         {
           text: 'Management- & Prozesskompetenz',
@@ -48,7 +48,5 @@ export const footerData = {
       href: 'https://www.linkedin.com/in/rainer-z%C3%BCnd-39a745391/',
     },
   ],
-  footNote: `
-    &copy; <script>document.write(new Date().getFullYear())</script> Raido GMBH
-  `,
+  footNote: 'Raido GMBH',
 };
