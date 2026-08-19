@@ -36,13 +36,17 @@ export const headerData = {
 };
 
 export const footerData = {
-  secondaryLinks: [
+  links: [
     { text: 'Impressum', href: getPermalink('/impressum') },
     { text: 'Disclaimer & Copyright', href: getPermalink('/disclaimer-copyright') },
     { text: 'Datenschutz', href: getPermalink('/datenschutz') },
   ],
   socialLinks: [
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/rainer-z%C3%BCnd-39a745391/' },
+    {
+      ariaLabel: 'LinkedIn',
+      icon: 'tabler:brand-linkedin',
+      href: 'https://www.linkedin.com/in/rainer-z%C3%BCnd-39a745391/',
+    },
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
     { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
     { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
