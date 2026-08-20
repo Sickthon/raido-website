@@ -14,8 +14,8 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Führungssupport und Coaching"
-    title="30 Jahre Führungserfahrung"
+    tagline="30 Jahre Führungserfahrung"
+    title="Führungssupport und Coaching"
     subtitle="Authentizität, Sozialkompetenz und Empathie als Basis für nachhaltige Entwicklung von Menschen und Organisationen."
   />
 
@@ -25,10 +25,10 @@ const metadata = {
     title="Meine Philosophie"
     items={[
       {
-        title: 'Mit den Mitarbeitern arbeiten, die da sind',
+        title: 'Authentische Führung',
         description:
-          'Nicht mit denjenigen, welche nicht da sind. Jeder Mensch hat Potential, das es zu entwickeln gilt.',
-        icon: 'tabler:users',
+          'Gelebte Authentizität schafft Vertrauen und Glaubwürdigkeit – die Grundlagen für echte Organisationsentwicklung.',
+        icon: 'tabler:certificate',
       },
       {
         title: 'Respekt vor dem Menschen',
@@ -43,10 +43,10 @@ const metadata = {
         icon: 'tabler:trending-up',
       },
       {
-        title: 'Authentische Führung',
+        title: '„Nicht die richtigen Mitarbeitenden?“',
         description:
-          'Gelebte Authentizität schafft Vertrauen und Glaubwürdigkeit – die Grundlagen für echte Organisationsentwicklung.',
-        icon: 'tabler:certificate',
+          'Arbeite mit den Mitarbeitenden zusammen, die du hast und nicht mit denjenigen, die du nicht hast.',
+        icon: 'tabler:users',
       },
     ]}
   >
@@ -67,6 +67,7 @@ const metadata = {
   <!-- Features2 Widget: Services ************** -->
 
   <Features2
+    classes={{ container: 'services-blue-cards' }}
     title="Wie ich Sie unterstütze"
     columns={2}
     items={[
@@ -82,7 +83,7 @@ const metadata = {
       },
       {
         title: 'Leadership Coaching',
-        description: 'Individuelles Coaching von Führungspersonen und High Potentials zur Kompetenzerweiterung.',
+        description: 'Individuelles Coaching von Führungspersonen und Talenten zur Kompetenzerweiterung.',
         icon: 'tabler:crown',
       },
       {
@@ -98,6 +99,16 @@ const metadata = {
     ]}
   />
 
+  <style>
+    :global(.services-blue-cards .grid > div) {
+      background-color: #f0fdf4;
+    }
+
+    :global(.dark .services-blue-cards .grid > div) {
+      background-color: #14532d;
+    }
+  </style>
+
   <!-- Call to Action Widget ********** -->
 
   <CallToAction
@@ -108,7 +119,7 @@ const metadata = {
         href: '/impressum-kontakt',
       },
     ]}
-    title="Lassen Sie uns zusammenarbeiten"
+    title="Gerne stelle ich mein Know-How zur Verfügung"
     subtitle="Gemeinsam entwickeln wir Ihre Menschen und Ihre Organisation weiter. Kontaktieren Sie mich für ein unverbindliches Gespräch."
   />
 </Layout>

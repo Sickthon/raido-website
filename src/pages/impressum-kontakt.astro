@@ -1,7 +1,5 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroText from '~/components/widgets/HeroText.astro';
-import ContactUs from '~/components/widgets/Contact.astro';
 import Content from '~/components/widgets/Content.astro';
 import portraitImage from '~/assets/images/Zuend_IMG_2457_bearb_Brille_korr_cropped.jpg';
 
@@ -16,14 +14,6 @@ const metadata = {
     classes={{ container: 'py-8 md:py-10 lg:py-12' }}
     columns={2}
     items={[
-      {
-        title: 'Telefon',
-        icon: 'tabler:phone',
-        callToAction: {
-          text: '+41 78 265 46 40',
-          href: 'tel:+41782654640',
-        },
-      },
       {
         title: 'E-Mail',
         icon: 'tabler:mail',
@@ -42,40 +32,22 @@ const metadata = {
   >
     <Fragment slot="content">
       <h1 class="text-3xl font-bold tracking-tight dark:text-white sm:text-4xl mb-4">Impressum und Kontakt</h1>
-      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Raido GMBH</h2>
-      <p class="mb-4">
-        <strong>Rainer Zünd</strong><br />
-        Sonnenhof 5<br />
-        8355 Aadorf<br />
-        Schweiz
-      </p>
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Raido GmbH</h2>
+      <div class="grid gap-6 md:grid-cols-2">
+        <p>
+          <strong>Rainer Zünd</strong><br />
+          Sonnenhof 5<br />
+          8355 Aadorf<br />
+          Schweiz
+        </p>
+
+        <p>
+          <strong>Handelsregister</strong><br />
+          Firmenname: Raido GmbH<br />
+          Nummer: CHE<br />
+          Handelsregisteramt: Thurgau
+        </p>
+      </div>
     </Fragment>
   </Content>
-
-  <HeroText tagline="Kontakt" title="Lassen Sie uns in Kontakt treten!" />
-
-  <ContactUs
-    id="form"
-    title="Nehmen Sie Kontakt auf"
-    subtitle="Gerne bespreche ich Ihre Situation und mögliche nächste Schritte persönlich mit Ihnen."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'E-Mail',
-      },
-    ]}
-    textarea={{
-      label: 'Nachricht',
-    }}
-    disclaimer={{
-      label: 'Mit dem Absenden stimmen Sie der Verarbeitung Ihrer Angaben zur Bearbeitung Ihrer Anfrage zu.',
-    }}
-    description="Ich melde mich so bald wie möglich bei Ihnen."
-  />
 </Layout>
