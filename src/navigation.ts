@@ -48,5 +48,5 @@ export const footerData = {
       href: 'https://www.linkedin.com/in/rainer-z%C3%BCnd-39a745391/',
     },
   ],
-  footNote: 'Raido GMBH',
+  footNote: 'Raido GmbH',
 };

@@ -3,7 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Content from '~/components/widgets/Content.astro';
-
+import CallToAction from '~/components/widgets/CallToAction.astro';
 const metadata = {
   title: 'Management und Prozesskompetenz',
 };
@@ -13,8 +13,8 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Management und Prozesskompetenz"
-    title="Interimsmanagement"
+    tagline="Interim Management"
+    title="Management- und Prozesskompetenz"
     subtitle="Zeitlich befristet übernehme ich gerne persönlich die erforderlichen Führungsaufgaben als CEO, COO oder Abteilungsleiter mit entsprechender Kosten- und Ergebnisverantwortung."
     image={{
       src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
@@ -78,7 +78,7 @@ const metadata = {
         icon: 'tabler:chart-line',
       },
       {
-        title: 'Changemanagement',
+        title: 'Change Management',
         description: 'Gestaltung und Durchführung von organisatorischen Veränderungsprozessen.',
         icon: 'tabler:trending-up',
       },
@@ -103,5 +103,20 @@ const metadata = {
         icon: 'tabler:building-bridge',
       },
     ]}
+  />
+
+    <!-- Call to Action Widget ********** -->
+
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Kontaktieren Sie mich',
+        href: '/impressum-kontakt',
+      },
+    ]}
+
+    title="Gerne stelle ich mein Know-How zur Verfügung"
+    subtitle="Zeitlich befristet übernehme ich gerne spezifische Führungsaufgaben oder Projekte in Ihrem Unternehmen. Kontaktieren Sie mich für ein unverbindliches Gespräch."
   />
 </Layout>
