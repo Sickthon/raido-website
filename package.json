@@ -24,7 +24,6 @@
     "@astro-community/astro-embed-twitter": "^0.5.11",
     "@astro-community/astro-embed-vimeo": "^0.3.12",
     "@astro-community/astro-embed-youtube": "^0.5.10",
-    "@astrojs/netlify": "^8.2.3",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
     "astro": "^7.2.4",
