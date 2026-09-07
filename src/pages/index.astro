@@ -33,7 +33,12 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <Image src={heroBackgroundImage} alt="" class="absolute inset-0 h-full w-full object-cover object-[50%_100%]" />
+      <Image
+        src={heroBackgroundImage}
+        alt=""
+        layout="cover"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_50%]"
+      />
       <div class="absolute inset-0 bg-white/75 dark:bg-black/60"></div>
     </Fragment>
   </Hero>
