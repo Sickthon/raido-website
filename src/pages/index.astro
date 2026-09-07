@@ -5,7 +5,9 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features from '~/components/widgets/Features.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Image from '~/components/common/Image.astro';
 import { getPermalink } from '~/utils/permalinks';
+import heroBackgroundImage from '~/assets/images/Hero/hero1.jpg';
 import portraitImage from '~/assets/images/Zuend_IMG_2480_bearb_Brille_korr_cropped.jpg';
 
 const metadata = {
@@ -29,6 +31,11 @@ const metadata = {
         <li>Expertentätigkeit</li>
       </ul>
     </Fragment>
+
+    <Fragment slot="bg">
+      <Image src={heroBackgroundImage} alt="" class="absolute inset-0 h-full w-full object-cover" />
+      <div class="absolute inset-0 bg-white/75 dark:bg-black/60"></div>
+    </Fragment>
   </Hero>
 
   <!-- Features Widget *************** -->
@@ -42,7 +49,7 @@ const metadata = {
         title: 'Management- & Prozesskompetenz',
         icon: 'tabler:brand-tailwind',
         callToAction: {
-          text: 'Authentisches Leadership als Basis für den Unternehmenserfolg und zielgerichtete Prozesse.',
+          text: 'Mit authentischem Leadership und zielgerichteten Prozessen zum Unternehmenserfolg.',
           href: getPermalink('/management-und-prozesskompetenz'),
           icon: 'tabler:arrow-right',
         },
@@ -91,19 +98,19 @@ const metadata = {
       {
         title: 'Persönlichkeit und Arbeitsweise',
         description:
-          '<ul class="list-disc pl-5 space-y-1"><li>Neutral und unabhängig</li><li>Wert- und qualitätsorientiert</li><li>Umsetzungsstarker Generalist</li><li>Authentische Leadership-Qualitäten</li><li>Lösungs- und zielorientiert mit ganzheitlicher Denkweise</li><li>Hands-on-Mentalität</li><li>30 Jahre erfolgreiche Linienerfahrung mit PnL-Verantwortung</li><li>Ergebnisorientierte Arbeitsweise mit ausgeprägter Fokussierung</li></ul>',
+          '<ul class="list-disc pl-5 space-y-1"><li>Neutral und unabhängig</li><li>Authentische Leadership-Qualitäten</li><li>Wert- und qualitätsorientiert</li><li>Umsetzungsstarker Generalist</li><li>30 Jahre erfolgreiche Linienerfahrung mit PnL-Verantwortung</li><li>Lösungs- und zielorientiert mit ganzheitlicher Denkweise</li><li>Ergebnisorientierte Arbeitsweise mit ausgeprägter Fokussierung</li><li>Hands-on-Mentalität</li></ul>',
         icon: 'tabler:user-check',
       },
       {
         title: 'Meine Erfahrungen',
         description:
-          '<ul class="list-disc pl-5 space-y-1"><li>30 Jahre Führungserfahrung bis CEO</li><li>30 Jahre Vertriebserfahrung in diversen Unternehmensfunktionen</li><li>Turnaround-Management</li><li>Organisationsentwicklung und Organisationsaufbau</li><li>Optimierung und Zusammenlegung von Produktionen</li><li>KPI-Management und Effizienzsteigerung</li><li>Change Management</li><li>Insourcing- und Outsourcing-Prozesse</li><li>Erfolgreiche Implementierung eines ERP-Systems</li></ul>',
+          '<ul class="list-disc pl-5 space-y-1"><li>30 Jahre Führungserfahrung bis und mit CEO-Funktion</li><li>30 Jahre Vertriebserfahrung in diversen Unternehmensfunktionen</li><li>Turnaround-Management</li><li>Organisationsentwicklung und Organisationsaufbau</li><li>Optimierung und Zusammenlegung von Produktionen</li><li>KPI-Management und Effizienzsteigerung</li><li>Change Management</li><li>Insourcing- und Outsourcing-Prozesse</li><li>Erfolgreiche Implementierung eines ERP-Systems</li></ul>',
         icon: 'tabler:briefcase',
       },
       {
-        title: 'Berufliche Meilensteine der letzten 20 Jahre',
+        title: 'Berufliche Meilensteine der letzten 30 Jahre',
         description:
-          '<ul class="list-none space-y-1"><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2006–2012:</span><span>Business Unit Leiter, Nüssli Schweiz AG</span></li><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2012–2018:</span><span>Divisionsleiter und Mitglied der Gruppenleitung, Nüssli Group</span></li><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2018–2025:</span><span>CEO, Stahlton AG</span></li></ul>',
+          '<ul class="list-none space-y-1"><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2018–2025:</span><span>CEO, Stahlton AG</span></li><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2012–2018:</span><span>Divisionsleiter und Mitglied der Gruppenleitung, Nüssli Group</span></li><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2006–2012:</span><span>Business Unit Leiter, Nüssli Schweiz AG</span></li><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>2001–2006:</span><span>Leiter Vorspanntechnik, Stahlton AG</span></li><li class="grid grid-cols-[5.5rem_1fr] gap-2"><span>1997–2001:</span><span>Leiter Verstärkungstechnik, Stahlton AG</span></li></ul>',
         icon: 'tabler:chart-line',
       },
     ]}
