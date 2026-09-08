@@ -50,7 +50,7 @@ jobs:
       id-token: write
 
     env:
-      ASTRO_SITE: raido.ch
+      ASTRO_SITE: https://raido.ch
       ASTRO_BASE: /
 
     steps:
