@@ -7,7 +7,7 @@ import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import Image from '~/components/common/Image.astro';
 import { getPermalink } from '~/utils/permalinks';
-import heroBackgroundImage from '~/assets/images/Hero/hero1.jpg';
+import heroBackgroundImage from '~/assets/images/Hero/hero3.jpg';
 import portraitImage from '~/assets/images/Zuend_IMG_2480_bearb_Brille_korr_cropped.jpg';
 
 const metadata = {
@@ -33,7 +33,12 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <Image src={heroBackgroundImage} alt="" class="absolute inset-0 h-full w-full object-cover" />
+      <Image
+        src={heroBackgroundImage}
+        alt=""
+        layout="cover"
+        class="absolute inset-0 h-full w-full object-cover object-[50%_50%]"
+      />
       <div class="absolute inset-0 bg-white/75 dark:bg-black/60"></div>
     </Fragment>
   </Hero>
