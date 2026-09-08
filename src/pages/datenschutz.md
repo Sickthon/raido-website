@@ -3,7 +3,6 @@ title: 'Datenschutzerklärung'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-
 _Letzte Aktualisierung_: 07. September 2026
 
 ## Wie erfassen wir Ihre Daten?
