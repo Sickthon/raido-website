@@ -50,8 +50,8 @@ jobs:
       id-token: write
 
     env:
-      ASTRO_SITE: https://sickthon.github.io/raido-website/
-      ASTRO_BASE: /raido-website
+      ASTRO_SITE: raido.ch
+      ASTRO_BASE: /
 
     steps:
       - name: Checkout repository
