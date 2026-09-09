@@ -26,7 +26,7 @@ const metadata = {
   >
     <Fragment slot="title">
       <ul class="list-none p-0 mt-0 mb-10 space-y-10">
-        <li>Management- und Prozesskompetenz</li>
+        <li>Management und Prozesse</li>
         <li>Führungssupport und Coaching</li>
         <li>Expertentätigkeit</li>
       </ul>
@@ -47,11 +47,12 @@ const metadata = {
 
   <Features
     id="kompetenzen"
+    hideIcons
     tagline="Übersicht"
     title="Meine Kompetenzen"
     items={[
       {
-        title: 'Management- & Prozesskompetenz',
+        title: 'Management & Prozesse',
         icon: 'tabler:brand-tailwind',
         callToAction: {
           text: 'Mit authentischem Leadership und zielgerichteten Prozessen zum Unternehmenserfolg.',
@@ -81,7 +82,7 @@ const metadata = {
         title: 'Kontakt',
         icon: 'tabler:mail',
         callToAction: {
-          text: 'So können sie mich kontaktieren.',
+          text: 'So können Sie mich kontaktieren.',
           href: getPermalink('/impressum-kontakt'),
           icon: 'tabler:arrow-right',
         },
@@ -89,7 +90,7 @@ const metadata = {
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-secondary-bg dark:bg-transparent"></div>
     </Fragment>
   </Features>
 
@@ -98,7 +99,7 @@ const metadata = {
   <Content
     id="ueber-mich"
     tagline="Über mich"
-    title="Wer ich bin."
+    title="Ein Experte, der Sie versteht:"
     items={[
       {
         title: 'Persönlichkeit und Arbeitsweise',
@@ -119,7 +120,11 @@ const metadata = {
         icon: 'tabler:chart-line',
       },
     ]}
-    image={{ src: portraitImage, alt: 'Porträt von Rainer Zünd' }}
+    image={{
+      src: portraitImage,
+      alt: 'Porträt von Rainer Zünd',
+      class: 'aspect-square rounded-full border-3 border-accent object-cover',
+    }}
   />
 
   <!-- Content Widget Kontakt -->
@@ -134,7 +139,7 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot="title">Möchten Sie mehr erfahren?</Fragment>
+    <Fragment slot="title">Ein klarer Blick kann ein Unterschied machen. Sprechen wir darüber.</Fragment>
     <Fragment slot="subtitle">
       Gerne bespreche ich Ihre Situation und mögliche nächste Schritte persönlich mit Ihnen.
     </Fragment>

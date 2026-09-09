@@ -222,6 +222,7 @@ export interface Features extends Omit<Headline, 'classes'>, Widget {
   items?: Array<Item>;
   columns?: number;
   defaultIcon?: string;
+  hideIcons?: boolean;
   isBeforeContent?: boolean;
   isAfterContent?: boolean;
 }
