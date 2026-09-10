@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Content from '~/components/widgets/Content.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import portraitImage from '~/assets/images/Zuend_IMG_2457_bearb_Brille_korr_cropped.jpg';
 
 const metadata = {
   title: 'Führungssupport und Coaching',
@@ -49,6 +50,12 @@ const metadata = {
         icon: 'tabler:users',
       },
     ]}
+    image={{
+      src: portraitImage,
+      alt: 'Porträt von Rainer Zünd',
+      loading: 'eager',
+      class: 'aspect-square rounded-full border-3 border-primary object-cover',
+    }}
   >
     <Fragment slot="content">
       <p>
@@ -60,7 +67,7 @@ const metadata = {
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-secondary-bg dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -104,8 +111,9 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Kontaktieren Sie mich',
+        text: 'Kontaktangaben',
         href: '/impressum-kontakt',
+        icon: 'tabler:arrow-right',
       },
     ]}
     title="Gerne stelle ich mein Know-How zur Verfügung"
