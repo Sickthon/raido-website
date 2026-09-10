@@ -14,8 +14,8 @@ export const headerData = {
           href: getPermalink('/#kompetenzen'),
         },
         {
-          text: 'Management- & Prozesskompetenz',
-          href: getPermalink('/management-und-prozesskompetenz'),
+          text: 'Management und Prozesse',
+          href: getPermalink('/management-und-prozesse'),
         },
         {
           text: 'Führungssupport und Coaching',

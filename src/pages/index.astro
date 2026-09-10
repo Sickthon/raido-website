@@ -56,7 +56,7 @@ const metadata = {
         icon: 'tabler:brand-tailwind',
         callToAction: {
           text: 'Mit authentischem Leadership und zielgerichteten Prozessen zum Unternehmenserfolg.',
-          href: getPermalink('/management-und-prozesskompetenz'),
+          href: getPermalink('/management-und-prozesse'),
           icon: 'tabler:arrow-right',
         },
       },
@@ -129,17 +129,18 @@ const metadata = {
 
   <!-- Content Widget Kontakt -->
   <CallToAction
-    classes={{ container: 'pt-0 md:pt-0 lg:pt-0' }}
+    classes={{ container: 'pt-12 md:pt-16 lg:pt-20' }}
     actions={[
       {
         variant: 'primary',
-        text: 'Nehmen Sie Kontakt auf!',
+        text: 'Kontaktangaben',
         href: getPermalink('/impressum-kontakt'),
         icon: 'tabler:arrow-right',
       },
     ]}
   >
-    <Fragment slot="title">Ein klarer Blick kann ein Unterschied machen. Sprechen wir darüber.</Fragment>
+    <Fragment slot="tagline">Kontakt aufnehmen</Fragment>
+    <Fragment slot="title">Ein klarer Blick kann einen Unterschied machen. Sprechen wir darüber.</Fragment>
     <Fragment slot="subtitle">
       Gerne bespreche ich Ihre Situation und mögliche nächste Schritte persönlich mit Ihnen.
     </Fragment>

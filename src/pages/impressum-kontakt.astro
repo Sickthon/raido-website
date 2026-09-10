@@ -12,11 +12,13 @@ const metadata = {
   <Content
     id="impressum-contact"
     classes={{ container: 'py-8 md:py-10 lg:py-12' }}
+    title="Impressum und Kontakt"
     columns={2}
     items={[
       {
         title: 'E-Mail',
         icon: 'tabler:mail',
+        color: 'bg-primary',
         callToAction: {
           text: 'info@raido.ch',
           href: 'mailto:info@raido.ch',
@@ -27,11 +29,10 @@ const metadata = {
       src: portraitImage,
       alt: 'Porträt von Rainer Zünd',
       loading: 'eager',
-      class: 'max-w-sm mx-auto',
+      class: 'aspect-square rounded-full border-3 border-primary object-cover',
     }}
   >
     <Fragment slot="content">
-      <h1 class="text-3xl font-bold tracking-tight dark:text-white sm:text-4xl mb-4">Impressum und Kontakt</h1>
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Raido GmbH</h2>
       <div class="grid gap-6 md:grid-cols-2">
         <p>
