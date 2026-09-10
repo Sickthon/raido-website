@@ -129,16 +129,17 @@ const metadata = {
 
   <!-- Content Widget Kontakt -->
   <CallToAction
-    classes={{ container: 'pt-0 md:pt-0 lg:pt-0' }}
+    classes={{ container: 'pt-12 md:pt-16 lg:pt-20' }}
     actions={[
       {
         variant: 'primary',
-        text: 'Nehmen Sie Kontakt auf!',
+        text: 'Kontaktangaben',
         href: getPermalink('/impressum-kontakt'),
         icon: 'tabler:arrow-right',
       },
     ]}
   >
+    <Fragment slot="tagline">Kontakt aufnehmen</Fragment>
     <Fragment slot="title">Ein klarer Blick kann ein Unterschied machen. Sprechen wir darüber.</Fragment>
     <Fragment slot="subtitle">
       Gerne bespreche ich Ihre Situation und mögliche nächste Schritte persönlich mit Ihnen.
