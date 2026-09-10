@@ -3,17 +3,27 @@ title: 'Datenschutzerklärung'
 layout: '~/layouts/MarkdownLayout.astro'
 ---
 
-_Letzte Aktualisierung_: 07. September 2026
+_Letzte Aktualisierung_ _am 07. September 2026_
 
-## Wie erfassen wir Ihre Daten?
+## 1. Datenschutz auf einen Blick
+
+### Wer ist verantwortlich für die Datenerfassung auf dieser Website?
+
+Die verantwortliche Stelle für die Datenbearbeitung auf dieser Website ist:\
+**Raido GmbH**\
+Sonnenhof 5\
+8355 Aadorf\
+E-Mail: info@raido.ch
+
+### Wie erfassen wir Ihre Daten?
 
 Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen (z. B. durch das Ausfüllen eines Kontaktformulars). Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst (v. a. technische Daten wie Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
 
-## Wofür nutzen wir Ihre Daten?
+### Wofür nutzen wir Ihre Daten?
 
 Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens oder für die Bearbeitung von Anfragen verwendet werden.
 
-## Welche Rechte haben Sie bezüglich Ihrer Daten?
+### Welche Rechte haben Sie bezüglich Ihrer Daten?
 
 Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten Personendaten zu erhalten. Sie haben ausserdem das Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie eine Einwilligung zur Datenbearbeitung erteilt haben, können Sie diese jederzeit für die Zukunft widerrufen.
 

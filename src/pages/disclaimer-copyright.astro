@@ -1,0 +1,33 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import Headline from '~/components/ui/Headline.astro';
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+
+const metadata = {
+  title: 'Haftungsausschluss',
+};
+---
+
+<Layout metadata={metadata}>
+  <WidgetWrapper containerClass="max-w-4xl mx-auto">
+    <Headline title="Haftungsausschluss" />
+    <div class="prose mx-auto max-w-3xl dark:prose-invert">
+      <p>
+        Der Autor übernimmt keinerlei Gewähr betreffend der inhaltlichen Vollständigkeit, Richtigkeit und Genauigkeit
+        der Informationen. Es werden jegliche Ansprüche gegen den Autor bzw. die Raido GmbH wegbedungen, welche aus dem
+        Zugriff, der Nutzung der veröffentlichten Informationen oder durch technische Störungen entstanden sind.
+      </p>
+    </div>
+  </WidgetWrapper>
+
+  <WidgetWrapper containerClass="max-w-4xl mx-auto pt-0 md:pt-0 lg:pt-0">
+    <Headline title="Urheberrecht" />
+    <div class="prose mx-auto max-w-3xl dark:prose-invert">
+      <p>
+        Die Urheber- und alle anderen Rechte an Inhalten, Bildern, Fotos oder anderen Dateien auf der Website gehören
+        ausschliesslich der Firma Raido GmbH oder den speziell genannten Rechtsinhabern. Für die Reproduktion jeglicher
+        Elemente ist die schriftliche Zustimmung der Urheberrechtsträger im Voraus einzuholen.
+      </p>
+    </div>
+  </WidgetWrapper>
+</Layout>
