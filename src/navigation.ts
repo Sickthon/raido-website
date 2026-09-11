@@ -37,7 +37,7 @@ export const headerData = {
 
 export const footerData = {
   links: [
-    { text: 'Impressum', href: getPermalink('/impressum-kontakt') },
+    { text: 'Impressum & Kontakt', href: getPermalink('/impressum-kontakt') },
     { text: 'Disclaimer & Copyright', href: getPermalink('/disclaimer-copyright') },
     { text: 'Datenschutz', href: getPermalink('/datenschutz') },
   ],

@@ -4,6 +4,7 @@ import Hero from '~/components/widgets/Hero.astro';
 import Features2 from '~/components/widgets/Features2.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import presentationImage from '~/assets/images/management-prozesse/praesentation.jpg';
 const metadata = {
   title: 'Management und Prozesse',
 };
@@ -16,10 +17,6 @@ const metadata = {
     tagline="Interim Management"
     title="Management und Prozesse"
     subtitle="Zeitlich befristet übernehme ich gerne persönlich die erforderlichen Führungsaufgaben als CEO, COO oder Abteilungsleiter mit entsprechender Kosten- und Ergebnisverantwortung."
-    image={{
-      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Management Image',
-    }}
   />
 
   <!-- Content Widget **************** -->
@@ -46,12 +43,15 @@ const metadata = {
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Leadership Image',
+      src: presentationImage,
+      alt: 'Präsentation im Management- und Prozessumfeld',
     }}
   >
     <Fragment slot="content">
-      <p>Bei Raido wissen Sie, mit wem Sie es zu tun haben – authentische Leadership-Qualitäten von Rainer Zünd.</p>
+      <p>Meine authentische Leadership-Qualität macht den Unterschied.
+        Gerne übernehme ich zeitlich befristet die Verantwortung einer operativen Einheit sowie die Umsetzung von
+        ausgewählten Projekten und Prozessen.
+      </p>
     </Fragment>
 
     <Fragment slot="bg">

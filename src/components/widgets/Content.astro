@@ -15,6 +15,8 @@ const {
   items = [],
   columns,
   image = await Astro.slots.render('image'),
+  secondaryImage,
+  secondaryImageCaption,
   isReversed = false,
   isAfterContent = false,
 
@@ -126,6 +128,29 @@ const columnsClass =
                   format="webp"
                   {...image}
                 />
+              )}
+            </div>
+          )
+        }
+        {
+          secondaryImage && (
+            <div class="relative mt-16 flex flex-col items-center">
+              {typeof secondaryImage === 'string' ? (
+                <Fragment set:html={secondaryImage} />
+              ) : (
+                <Image
+                  class="w-full max-w-sm rounded-lg border-3 border-accent object-cover"
+                  width={400}
+                  height={400}
+                  widths={[300, 400, 600]}
+                  sizes="(max-width: 768px) 100vw, 384px"
+                  layout="constrained"
+                  format="webp"
+                  {...secondaryImage}
+                />
+              )}
+              {secondaryImageCaption && (
+                <p class="mt-2 text-center text-sm text-muted dark:text-default">{secondaryImageCaption}</p>
               )}
             </div>
           )
