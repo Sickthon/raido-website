@@ -11,7 +11,7 @@ metadata:
   title:
     default: Raido
     template: '%s — Raido'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: 'Raido unterstützt Unternehmen mit Führung, Managementprozessen und Coaching für klare Entscheidungen, wirksame Strukturen und nachhaltigen Erfolg.'
   robots:
     index: true
     follow: true
@@ -22,13 +22,9 @@ metadata:
         width: 1200
         height: 628
     type: website
-  twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
-    cardType: summary_large_image
 
 i18n:
-  language: en
+  language: de
   textDirection: ltr
 
 ui:
